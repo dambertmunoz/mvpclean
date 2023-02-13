@@ -4,8 +4,8 @@ import Foundation
 
 protocol DogLocalRepositoryProtocol: BaseRepositoryProtocol {
 
-    func isEmpty(_ completion: @escaping (Bool) -> Void)
-    func save(dogs: [DogEntity], _ completion: @escaping (Bool) -> Void)
+    func isEmpty(_ completion: @escaping (Result<Bool, Error>) -> Void)
+    func save(dogs: [DogEntity], _ completion: @escaping (Result<Bool, Error>) -> Void)
 }
 
 struct DogLocalRepository: DogLocalRepositoryProtocol {
@@ -17,11 +17,11 @@ struct DogLocalRepository: DogLocalRepositoryProtocol {
         self.dataSource = dataSource
     }
 
-    func isEmpty(_ completion: @escaping (Bool) -> Void) {
+    func isEmpty(_ completion: @escaping (Result<Bool, Error>) -> Void) {
         dataSource.isEmpty(completion)
     }
 
-    func save(dogs: [DogEntity], _ completion: @escaping (Bool) -> Void) {
+    func save(dogs: [DogEntity], _ completion: @escaping (Result<Bool, Error>) -> Void) {
         dataSource.save(dogs: dogs, completion)
     }
 

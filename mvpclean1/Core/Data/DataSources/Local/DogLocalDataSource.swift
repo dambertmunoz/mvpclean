@@ -6,8 +6,8 @@ import RealmSwift
 
 protocol DogLocalDataSourceProtocol: BaseDataSourceProtocol {
 
-    func isEmpty(_ completion: @escaping (Bool) -> Void)
-    func save(dogs: [DogEntity], _ completion: @escaping (Bool) -> Void)
+    func isEmpty(_ completion: @escaping (Result<Bool, Error>) -> Void)
+    func save(dogs: [DogEntity], _ completion: @escaping (Result<Bool, Error>) -> Void)
 }
 
 struct DogLocalDataSource: DogLocalDataSourceProtocol {
@@ -20,12 +20,11 @@ struct DogLocalDataSource: DogLocalDataSourceProtocol {
             completion(.success(dogs))
         } catch {
             completion(.failure(error))
-            print(error)
         }
 
     }
 
-    func isEmpty(_ completion: (Bool) -> Void) {
+    func isEmpty(_ completion: @escaping (Result<Bool, Error>) -> Void) {
         // RealM
 
         do {
@@ -33,22 +32,23 @@ struct DogLocalDataSource: DogLocalDataSourceProtocol {
 
             let exist = realm.objects(DogEntity.self).isEmpty
 
-            completion(exist)
+            completion(.success(exist))
 
         } catch {
-            print(error)
+            completion(.failure(error))
         }
     }
     
-    func save(dogs: [DogEntity], _ completion: @escaping (Bool) -> Void) {
+    func save(dogs: [DogEntity], _ completion: @escaping (Result<Bool, Error>) -> Void) {
 
         do {
             let realm: Realm = try Realm()
             try realm.write {
                 realm.add(dogs)
             }
+            completion(.success(true))
         } catch {
-            print(error)
+            completion(.failure(error))
         }
     }
 

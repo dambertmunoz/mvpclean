@@ -26,7 +26,7 @@ final class LoginViewController: UIViewController {
     // MARK: Methods
     func setupUI() {
 
-        var animationView = LottieType.login.animationView
+        let animationView = LottieType.login.animationView
         animationView.frame = lottieView.bounds
         lottieView.addSubview(animationView)
     }

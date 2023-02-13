@@ -54,7 +54,9 @@ extension DogViewController: DogViewControllerDelegate {
     }
     
     func showError(_ error: Error) {
-        // TO DO: Show Error, manage custom error
+        showAlert(message: Constants.retry) { _ in
+            self.presenter.setupData()
+        }
     }
 }
 
@@ -69,7 +71,7 @@ extension DogViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 164
+        return Layout.heightDogForRow
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

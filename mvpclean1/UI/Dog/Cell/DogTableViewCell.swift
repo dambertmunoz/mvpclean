@@ -11,6 +11,7 @@ final class DogTableViewCell: UITableViewCell, NibLoadableView {
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var imageLabel: UIImageView!
 
+    // MARK: Inits
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
@@ -26,14 +27,13 @@ final class DogTableViewCell: UITableViewCell, NibLoadableView {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
+    // MARK: Methods
     func setup(dog: Dog) {
         titleLabel.text = dog.name
         descriptionLabel.text = dog.text
-        ageLabel.text = "Almost \(dog.age ?? 0) years"
+        ageLabel.text = Constants.dogsAgeDescription.replacingOccurrences(of: "%@", with: "\(dog.age ?? 0)")
 
         if let url = dog.url {
             KF.url(URL(string: url)).set(to: imageLabel)
