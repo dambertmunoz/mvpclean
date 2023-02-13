@@ -38,7 +38,6 @@ final class DogTableViewCell: UITableViewCell, NibLoadableView {
         if let url = dog.url {
             KF.url(URL(string: url)).set(to: imageLabel)
         }
-        
+
     }
-    
 }

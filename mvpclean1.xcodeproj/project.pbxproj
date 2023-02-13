@@ -790,6 +790,8 @@
 				C14EA2C92994CBA300DCA491 /* DogPresenter.swift in Sources */,
 				C17DDF9B299A001200739E33 /* Constants.swift in Sources */,
 				C17DDFA1299A004700739E33 /* Layout.swift in Sources */,
+				C14EA2C02994C7DC00DCA491 /* DogMapperProtocol.swift in Sources */,
+				C14EA2C92994CBA300DCA491 /* DogPresenter.swift in Sources */,
 				C14EA2B62994BF6E00DCA491 /* DogEntity.swift in Sources */,
 				C1C5E5DA29967B680069ED1E /* Coordinator.swift in Sources */,
 				C11BEE5C2999CB0C00633322 /* DogRemoteRepository.swift in Sources */,

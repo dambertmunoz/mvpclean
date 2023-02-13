@@ -16,7 +16,6 @@ struct DogLocalRepository: DogLocalRepositoryProtocol {
     init(dataSource: DogLocalDataSourceProtocol = DogLocalDataSource()) {
         self.dataSource = dataSource
     }
-
     func isEmpty(_ completion: @escaping (Result<Bool, Error>) -> Void) {
         dataSource.isEmpty(completion)
     }

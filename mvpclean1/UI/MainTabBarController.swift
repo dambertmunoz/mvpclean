@@ -19,8 +19,6 @@ final class MainTabBarController: UITabBarController {
                                          image: ImagesType.iconList.imageSystemName,
                                          selectedImage: ImagesType.iconList.imageSystemName)
 
-        tabOne.tabBarItem = tabOneBarItem
-
         self.viewControllers = [tabOne]
     }
 }
