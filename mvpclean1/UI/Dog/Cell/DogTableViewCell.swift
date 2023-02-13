@@ -36,6 +36,7 @@ final class DogTableViewCell: UITableViewCell, NibLoadableView {
         ageLabel.text = Constants.dogsAgeDescription.replacingOccurrences(of: "%@", with: "\(dog.age ?? 0)")
 
         if let url = dog.url {
+            imageLabel.contentMode = .scaleAspectFit
             KF.url(URL(string: url)).set(to: imageLabel)
         }
 

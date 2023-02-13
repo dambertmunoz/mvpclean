@@ -13,6 +13,8 @@
 		C11BEE5C2999CB0C00633322 /* DogRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11BEE5B2999CB0C00633322 /* DogRemoteRepository.swift */; };
 		C11BEE5E2999CB4800633322 /* BaseRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11BEE5D2999CB4800633322 /* BaseRepositoryProtocol.swift */; };
 		C11BEE612999E1D600633322 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11BEE602999E1D600633322 /* BaseViewController.swift */; };
+		C140CAD8299A06BF0059FB32 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140CAD6299A06BF0059FB32 /* ProfileViewController.swift */; };
+		C140CAD9299A06BF0059FB32 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C140CAD7299A06BF0059FB32 /* ProfileViewController.xib */; };
 		C14EA26D2994BA7A00DCA491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA26C2994BA7A00DCA491 /* AppDelegate.swift */; };
 		C14EA26F2994BA7A00DCA491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA26E2994BA7A00DCA491 /* SceneDelegate.swift */; };
 		C14EA2712994BA7A00DCA491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2702994BA7A00DCA491 /* ViewController.swift */; };
@@ -103,6 +105,8 @@
 		C11BEE5B2999CB0C00633322 /* DogRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRemoteRepository.swift; sourceTree = "<group>"; };
 		C11BEE5D2999CB4800633322 /* BaseRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepositoryProtocol.swift; sourceTree = "<group>"; };
 		C11BEE602999E1D600633322 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C140CAD6299A06BF0059FB32 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C140CAD7299A06BF0059FB32 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		C14EA2692994BA7A00DCA491 /* mvpclean1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvpclean1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14EA26C2994BA7A00DCA491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C14EA26E2994BA7A00DCA491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +230,15 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		C140CAD5299A06A70059FB32 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C140CAD6299A06BF0059FB32 /* ProfileViewController.swift */,
+				C140CAD7299A06BF0059FB32 /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		C14EA2602994BA7A00DCA491 = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +302,7 @@
 				C11BEE602999E1D600633322 /* BaseViewController.swift */,
 				C1C5E5E9299940AB0069ED1E /* MainTabBarController.swift */,
 				C1C5E5DD299920CC0069ED1E /* Login */,
+				C140CAD5299A06A70059FB32 /* Profile */,
 				C14EA2C32994CB7600DCA491 /* Dog */,
 			);
 			path = UI;
@@ -624,6 +638,7 @@
 				C1C5E604299987870069ED1E /* Omnes-Bold.otf in Resources */,
 				C1C5E610299987870069ED1E /* Omnes-Black.otf in Resources */,
 				C1C5E605299987870069ED1E /* Omnes-Medium.otf in Resources */,
+				C140CAD9299A06BF0059FB32 /* ProfileViewController.xib in Resources */,
 				C14EA27C2994BA7B00DCA491 /* LaunchScreen.storyboard in Resources */,
 				C14EA2792994BA7B00DCA491 /* Assets.xcassets in Resources */,
 				C1C5E612299987870069ED1E /* Omnes-BoldItalic.otf in Resources */,
@@ -766,6 +781,7 @@
 				C17DDF972999FC9200739E33 /* DogPathEndpoint.swift in Sources */,
 				C14EA2C22994C82900DCA491 /* DogMapper.swift in Sources */,
 				C1C5E5EC29994B7F0069ED1E /* LoginPresenter.swift in Sources */,
+				C140CAD8299A06BF0059FB32 /* ProfileViewController.swift in Sources */,
 				C11BEE612999E1D600633322 /* BaseViewController.swift in Sources */,
 				C14EA26D2994BA7A00DCA491 /* AppDelegate.swift in Sources */,
 				C14EA2BB2994C26000DCA491 /* DogLocalRepository.swift in Sources */,

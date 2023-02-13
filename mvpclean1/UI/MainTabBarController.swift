@@ -13,13 +13,20 @@ final class MainTabBarController: UITabBarController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        // Create Tab one
-        let tabOne = DogViewController()
+        let dogVC = DogViewController()
         let tabOneBarItem = UITabBarItem(title: Constants.dogsTitle,
                                          image: ImagesType.iconList.imageSystemName,
                                          selectedImage: ImagesType.iconList.imageSystemName)
 
-        self.viewControllers = [tabOne]
+        dogVC.tabBarItem = tabOneBarItem
+
+        let profileVC = ProfileViewController()
+        let tabSecondBarItem = UITabBarItem(title: Constants.profileTitle,
+                                         image: ImagesType.person.imageSystemName,
+                                         selectedImage: ImagesType.person.imageSystemName)
+        profileVC.tabBarItem = tabSecondBarItem
+
+        self.viewControllers = [dogVC, profileVC]
     }
 }
 
