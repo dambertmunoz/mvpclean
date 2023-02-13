@@ -20,3 +20,12 @@ extension UIViewController {
         return instance
     }
 }
+
+extension UIViewController {
+
+    func showAlert(message: String, completion: ((UIAlertAction) -> Void)? ) {
+        let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: completion))
+        self.present(alert, animated: true, completion: nil)
+    }
+}

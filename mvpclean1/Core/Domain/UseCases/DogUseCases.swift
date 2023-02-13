@@ -17,24 +17,30 @@ struct DogUseCases: DogUseCasesProtocol {
 
         // 1. Valid if empty data from local datasource
         let localRepository = DogLocalRepository()
-        localRepository.isEmpty({ isLocalEmpty in
+        localRepository.isEmpty({ resultEmpty in
             // 2. If data doesnt exist, repository inits with .remote
             var fetchAllRepository: BaseRepositoryProtocol = localRepository
-            if isLocalEmpty {
-                fetchAllRepository = DogRemoteRepository()
-            }
-            // 3. Fetch all Data
-            fetchAllRepository.fetchAll { result in
-                switch result {
-                case .success(let data):
-                    // 4. Save data if data is not saved in local
-//                    if isLocalEmpty {
-//                        localRepository.save(dogs: data, {_ in } )
-//                    }
-                    completion(.success(self.mapper.toDomain(data)))
-                case .failure(let err):
-                    completion(.failure(err))
+            switch resultEmpty {
+            case .success(let isLocalEmpty):
+                if isLocalEmpty {
+                    fetchAllRepository = DogRemoteRepository()
                 }
+
+                // 3. Fetch all Data
+                fetchAllRepository.fetchAll { result in
+                    switch result {
+                    case .success(let data):
+                        // 4. Save data if data is not saved in local
+                        if isLocalEmpty {
+                            localRepository.save(dogs: data, {_ in } )
+                        }
+                        completion(.success(self.mapper.toDomain(data)))
+                    case .failure(let err):
+                        completion(.failure(err))
+                    }
+                }
+            case .failure(let failure):
+                completion(.failure(failure))
             }
         })
     }

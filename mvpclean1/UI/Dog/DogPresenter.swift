@@ -22,6 +22,7 @@ final class DogPresenter: DogPresenterProtocol {
         self.useCase = useCase
     }
 
+    // MARK: Methods
     func setupData() {
         view?.showLoading()
         useCase.fetchAll { result in

@@ -12,7 +12,7 @@ struct DogRemoteDataSource: DogRemoteDataSourceProtocol {
     func fetchAll(_ completion: @escaping (Result<[DogEntity], Error>) -> Void) {
         // Consumir API
 
-        AF.request("https://demo6878202.mockable.io/dogs",
+        AF.request(DogPathEndpoint.EndpointType.dogs.fullURL,
                    method: .get,
                    encoding: JSONEncoding.default)
         .responseDecodable(of: [DogEntity].self) { response in
@@ -20,7 +20,7 @@ struct DogRemoteDataSource: DogRemoteDataSourceProtocol {
                     case .success(let value):
                         completion(.success(value))
                     case .failure(let error):
-                        print(error)
+                        completion(.failure(error))
                     }
             }
     }
