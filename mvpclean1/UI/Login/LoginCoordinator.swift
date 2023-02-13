@@ -15,6 +15,7 @@ final class LoginCoordinator: LoginCoordinatorProtocol, Coordinator {
 
     func goToHomeTab() {
         let viewController = MainTabBarController.instance()
-        navigationController.pushViewController(viewController, animated: true)
+        viewController.modalPresentationStyle = .fullScreen
+        navigationController.present(viewController, animated: true)
     }
 }
