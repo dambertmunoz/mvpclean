@@ -7,16 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22CA0010C55CCFE54BD664A8 /* Pods_mvpclean1_mvpclean1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8EBF3897D30EF81F70B1B5 /* Pods_mvpclean1_mvpclean1UITests.framework */; };
+		418992919ADBAC24E6A2675A /* Pods_mvpclean1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409DA55E099B04E811B67293 /* Pods_mvpclean1.framework */; };
+		C11BEE5A2999C96A00633322 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = C11BEE592999C96A00633322 /* loading.json */; };
+		C11BEE5C2999CB0C00633322 /* DogRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11BEE5B2999CB0C00633322 /* DogRemoteRepository.swift */; };
+		C11BEE5E2999CB4800633322 /* BaseRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11BEE5D2999CB4800633322 /* BaseRepositoryProtocol.swift */; };
+		C11BEE612999E1D600633322 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11BEE602999E1D600633322 /* BaseViewController.swift */; };
 		C14EA26D2994BA7A00DCA491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA26C2994BA7A00DCA491 /* AppDelegate.swift */; };
 		C14EA26F2994BA7A00DCA491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA26E2994BA7A00DCA491 /* SceneDelegate.swift */; };
 		C14EA2712994BA7A00DCA491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2702994BA7A00DCA491 /* ViewController.swift */; };
-		C14EA2742994BA7A00DCA491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14EA2722994BA7A00DCA491 /* Main.storyboard */; };
-		C14EA2772994BA7A00DCA491 /* mvpclean1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2752994BA7A00DCA491 /* mvpclean1.xcdatamodeld */; };
 		C14EA2792994BA7B00DCA491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14EA2782994BA7B00DCA491 /* Assets.xcassets */; };
 		C14EA27C2994BA7B00DCA491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14EA27A2994BA7B00DCA491 /* LaunchScreen.storyboard */; };
 		C14EA2872994BA7C00DCA491 /* mvpclean1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2862994BA7C00DCA491 /* mvpclean1Tests.swift */; };
 		C14EA2912994BA7C00DCA491 /* mvpclean1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2902994BA7C00DCA491 /* mvpclean1UITests.swift */; };
 		C14EA2932994BA7C00DCA491 /* mvpclean1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2922994BA7C00DCA491 /* mvpclean1UITestsLaunchTests.swift */; };
+		C14EA2AC2994BD5F00DCA491 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2AB2994BD5F00DCA491 /* Dog.swift */; };
+		C14EA2AE2994BDC100DCA491 /* DogUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2AD2994BDC100DCA491 /* DogUseCases.swift */; };
+		C14EA2B02994BDE500DCA491 /* DogUseCasesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2AF2994BDE500DCA491 /* DogUseCasesProtocol.swift */; };
+		C14EA2B22994BE9F00DCA491 /* DogRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2B12994BE9F00DCA491 /* DogRemoteDataSource.swift */; };
+		C14EA2B42994BF0000DCA491 /* DogLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2B32994BF0000DCA491 /* DogLocalDataSource.swift */; };
+		C14EA2B62994BF6E00DCA491 /* DogEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2B52994BF6E00DCA491 /* DogEntity.swift */; };
+		C14EA2B82994C1F000DCA491 /* BaseDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2B72994C1F000DCA491 /* BaseDataSourceProtocol.swift */; };
+		C14EA2BB2994C26000DCA491 /* DogLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2BA2994C26000DCA491 /* DogLocalRepository.swift */; };
+		C14EA2C02994C7DC00DCA491 /* DogMapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2BF2994C7DC00DCA491 /* DogMapperProtocol.swift */; };
+		C14EA2C22994C82900DCA491 /* DogMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2C12994C82900DCA491 /* DogMapper.swift */; };
+		C14EA2C62994CB9600DCA491 /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2C42994CB9600DCA491 /* DogViewController.swift */; };
+		C14EA2C72994CB9600DCA491 /* DogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14EA2C52994CB9600DCA491 /* DogViewController.xib */; };
+		C14EA2C92994CBA300DCA491 /* DogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2C82994CBA300DCA491 /* DogPresenter.swift */; };
+		C14EA2CD2994CC2600DCA491 /* DogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2CB2994CC2600DCA491 /* DogTableViewCell.swift */; };
+		C14EA2CE2994CC2600DCA491 /* DogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14EA2CC2994CC2600DCA491 /* DogTableViewCell.xib */; };
+		C14EA2D0299536F900DCA491 /* Register+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EA2CF299536F900DCA491 /* Register+Extension.swift */; };
+		C1C5E5D829967AFD0069ED1E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C5E5D729967AFD0069ED1E /* MainCoordinator.swift */; };
+		C1C5E5DA29967B680069ED1E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C5E5D929967B680069ED1E /* Coordinator.swift */; };
+		C1C5E5DC29967D560069ED1E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C5E5DB29967D560069ED1E /* UIViewController+Extension.swift */; };
+		C1C5E5E4299924020069ED1E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C5E5E2299924020069ED1E /* LoginViewController.swift */; };
+		C1C5E5E5299924020069ED1E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5E3299924020069ED1E /* LoginViewController.xib */; };
+		C1C5E5E7299924EA0069ED1E /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C5E5E6299924EA0069ED1E /* LoginCoordinator.swift */; };
+		C1C5E5EA299940AB0069ED1E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C5E5E9299940AB0069ED1E /* MainTabBarController.swift */; };
+		C1C5E5EC29994B7F0069ED1E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C5E5EB29994B7F0069ED1E /* LoginPresenter.swift */; };
+		C1C5E601299987870069ED1E /* Omnes-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5EF299987870069ED1E /* Omnes-MediumItalic.otf */; };
+		C1C5E602299987870069ED1E /* Omnes-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5F0299987870069ED1E /* Omnes-BlackItalic.otf */; };
+		C1C5E603299987870069ED1E /* Omnes-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5F1299987870069ED1E /* Omnes-SemiboldItalic.otf */; };
+		C1C5E604299987870069ED1E /* Omnes-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5F2299987870069ED1E /* Omnes-Bold.otf */; };
+		C1C5E605299987870069ED1E /* Omnes-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5F3299987870069ED1E /* Omnes-Medium.otf */; };
+		C1C5E606299987870069ED1E /* Omnes-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5F4299987870069ED1E /* Omnes-LightItalic.otf */; };
+		C1C5E607299987870069ED1E /* Omnes-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5F5299987870069ED1E /* Omnes-Light.otf */; };
+		C1C5E608299987870069ED1E /* Omnes-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5F6299987870069ED1E /* Omnes-Thin.otf */; };
+		C1C5E609299987870069ED1E /* Omnes-ExtraLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5F7299987870069ED1E /* Omnes-ExtraLightItalic.otf */; };
+		C1C5E60A299987870069ED1E /* Omnes-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5F8299987870069ED1E /* Omnes-Hairline.otf */; };
+		C1C5E60B299987870069ED1E /* Omnes-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5F9299987870069ED1E /* Omnes-ThinItalic.otf */; };
+		C1C5E60C299987870069ED1E /* Omnes-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5FA299987870069ED1E /* Omnes-ExtraLight.otf */; };
+		C1C5E60D299987870069ED1E /* Omnes-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5FB299987870069ED1E /* Omnes-Regular.otf */; };
+		C1C5E60E299987870069ED1E /* Omnes-HairlineItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5FC299987870069ED1E /* Omnes-HairlineItalic.otf */; };
+		C1C5E60F299987870069ED1E /* Omnes-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5FD299987870069ED1E /* Omnes-RegularItalic.otf */; };
+		C1C5E610299987870069ED1E /* Omnes-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5FE299987870069ED1E /* Omnes-Black.otf */; };
+		C1C5E611299987870069ED1E /* Omnes-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E5FF299987870069ED1E /* Omnes-Semibold.otf */; };
+		C1C5E612299987870069ED1E /* Omnes-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E600299987870069ED1E /* Omnes-BoldItalic.otf */; };
+		C1C5E61529998CFE0069ED1E /* loginLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = C1C5E61429998CFE0069ED1E /* loginLottie.json */; };
+		C1C5E61729998EC20069ED1E /* LottieType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C5E61629998EC20069ED1E /* LottieType.swift */; };
+		C90E893DC6B4EAB232E83563 /* Pods_mvpclean1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484DC5313BA4DA5BC19717E5 /* Pods_mvpclean1Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +86,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04F9A76ADAF123A1633D1DC4 /* Pods-mvpclean1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvpclean1.release.xcconfig"; path = "Target Support Files/Pods-mvpclean1/Pods-mvpclean1.release.xcconfig"; sourceTree = "<group>"; };
+		1E8EBF3897D30EF81F70B1B5 /* Pods_mvpclean1_mvpclean1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvpclean1_mvpclean1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3ED37A73FEC5E825576E59 /* Pods-mvpclean1-mvpclean1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvpclean1-mvpclean1UITests.debug.xcconfig"; path = "Target Support Files/Pods-mvpclean1-mvpclean1UITests/Pods-mvpclean1-mvpclean1UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		409DA55E099B04E811B67293 /* Pods_mvpclean1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvpclean1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		484DC5313BA4DA5BC19717E5 /* Pods_mvpclean1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvpclean1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7050FFEA329638830FA782C5 /* Pods-mvpclean1-mvpclean1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvpclean1-mvpclean1UITests.release.xcconfig"; path = "Target Support Files/Pods-mvpclean1-mvpclean1UITests/Pods-mvpclean1-mvpclean1UITests.release.xcconfig"; sourceTree = "<group>"; };
+		AC95BB0269F14EE8FAE1433F /* Pods-mvpclean1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvpclean1Tests.release.xcconfig"; path = "Target Support Files/Pods-mvpclean1Tests/Pods-mvpclean1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B895874ADF20BE659E0FCA4C /* Pods-mvpclean1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvpclean1Tests.debug.xcconfig"; path = "Target Support Files/Pods-mvpclean1Tests/Pods-mvpclean1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C11BEE592999C96A00633322 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		C11BEE5B2999CB0C00633322 /* DogRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRemoteRepository.swift; sourceTree = "<group>"; };
+		C11BEE5D2999CB4800633322 /* BaseRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepositoryProtocol.swift; sourceTree = "<group>"; };
+		C11BEE602999E1D600633322 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C14EA2692994BA7A00DCA491 /* mvpclean1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvpclean1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14EA26C2994BA7A00DCA491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C14EA26E2994BA7A00DCA491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C14EA2702994BA7A00DCA491 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C14EA2732994BA7A00DCA491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C14EA2762994BA7A00DCA491 /* mvpclean1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mvpclean1.xcdatamodel; sourceTree = "<group>"; };
 		C14EA2782994BA7B00DCA491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C14EA27B2994BA7B00DCA491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C14EA27D2994BA7B00DCA491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +110,51 @@
 		C14EA28C2994BA7C00DCA491 /* mvpclean1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mvpclean1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14EA2902994BA7C00DCA491 /* mvpclean1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvpclean1UITests.swift; sourceTree = "<group>"; };
 		C14EA2922994BA7C00DCA491 /* mvpclean1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvpclean1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C14EA2AB2994BD5F00DCA491 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		C14EA2AD2994BDC100DCA491 /* DogUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogUseCases.swift; sourceTree = "<group>"; };
+		C14EA2AF2994BDE500DCA491 /* DogUseCasesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogUseCasesProtocol.swift; sourceTree = "<group>"; };
+		C14EA2B12994BE9F00DCA491 /* DogRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRemoteDataSource.swift; sourceTree = "<group>"; };
+		C14EA2B32994BF0000DCA491 /* DogLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogLocalDataSource.swift; sourceTree = "<group>"; };
+		C14EA2B52994BF6E00DCA491 /* DogEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogEntity.swift; sourceTree = "<group>"; };
+		C14EA2B72994C1F000DCA491 /* BaseDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataSourceProtocol.swift; sourceTree = "<group>"; };
+		C14EA2BA2994C26000DCA491 /* DogLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogLocalRepository.swift; sourceTree = "<group>"; };
+		C14EA2BF2994C7DC00DCA491 /* DogMapperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogMapperProtocol.swift; sourceTree = "<group>"; };
+		C14EA2C12994C82900DCA491 /* DogMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogMapper.swift; sourceTree = "<group>"; };
+		C14EA2C42994CB9600DCA491 /* DogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewController.swift; sourceTree = "<group>"; };
+		C14EA2C52994CB9600DCA491 /* DogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogViewController.xib; sourceTree = "<group>"; };
+		C14EA2C82994CBA300DCA491 /* DogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogPresenter.swift; sourceTree = "<group>"; };
+		C14EA2CB2994CC2600DCA491 /* DogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogTableViewCell.swift; sourceTree = "<group>"; };
+		C14EA2CC2994CC2600DCA491 /* DogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogTableViewCell.xib; sourceTree = "<group>"; };
+		C14EA2CF299536F900DCA491 /* Register+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Register+Extension.swift"; sourceTree = "<group>"; };
+		C1C5E5D729967AFD0069ED1E /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		C1C5E5D929967B680069ED1E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C1C5E5DB29967D560069ED1E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		C1C5E5E2299924020069ED1E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C1C5E5E3299924020069ED1E /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		C1C5E5E6299924EA0069ED1E /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		C1C5E5E9299940AB0069ED1E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		C1C5E5EB29994B7F0069ED1E /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		C1C5E5EF299987870069ED1E /* Omnes-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-MediumItalic.otf"; sourceTree = "<group>"; };
+		C1C5E5F0299987870069ED1E /* Omnes-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-BlackItalic.otf"; sourceTree = "<group>"; };
+		C1C5E5F1299987870069ED1E /* Omnes-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		C1C5E5F2299987870069ED1E /* Omnes-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-Bold.otf"; sourceTree = "<group>"; };
+		C1C5E5F3299987870069ED1E /* Omnes-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-Medium.otf"; sourceTree = "<group>"; };
+		C1C5E5F4299987870069ED1E /* Omnes-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-LightItalic.otf"; sourceTree = "<group>"; };
+		C1C5E5F5299987870069ED1E /* Omnes-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-Light.otf"; sourceTree = "<group>"; };
+		C1C5E5F6299987870069ED1E /* Omnes-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-Thin.otf"; sourceTree = "<group>"; };
+		C1C5E5F7299987870069ED1E /* Omnes-ExtraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-ExtraLightItalic.otf"; sourceTree = "<group>"; };
+		C1C5E5F8299987870069ED1E /* Omnes-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-Hairline.otf"; sourceTree = "<group>"; };
+		C1C5E5F9299987870069ED1E /* Omnes-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-ThinItalic.otf"; sourceTree = "<group>"; };
+		C1C5E5FA299987870069ED1E /* Omnes-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-ExtraLight.otf"; sourceTree = "<group>"; };
+		C1C5E5FB299987870069ED1E /* Omnes-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-Regular.otf"; sourceTree = "<group>"; };
+		C1C5E5FC299987870069ED1E /* Omnes-HairlineItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-HairlineItalic.otf"; sourceTree = "<group>"; };
+		C1C5E5FD299987870069ED1E /* Omnes-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-RegularItalic.otf"; sourceTree = "<group>"; };
+		C1C5E5FE299987870069ED1E /* Omnes-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-Black.otf"; sourceTree = "<group>"; };
+		C1C5E5FF299987870069ED1E /* Omnes-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-Semibold.otf"; sourceTree = "<group>"; };
+		C1C5E600299987870069ED1E /* Omnes-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-BoldItalic.otf"; sourceTree = "<group>"; };
+		C1C5E61429998CFE0069ED1E /* loginLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loginLottie.json; sourceTree = "<group>"; };
+		C1C5E61629998EC20069ED1E /* LottieType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieType.swift; sourceTree = "<group>"; };
+		E30CD4768C395241A5FB1D9D /* Pods-mvpclean1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvpclean1.debug.xcconfig"; path = "Target Support Files/Pods-mvpclean1/Pods-mvpclean1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418992919ADBAC24E6A2675A /* Pods_mvpclean1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C90E893DC6B4EAB232E83563 /* Pods_mvpclean1Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +178,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CA0010C55CCFE54BD664A8 /* Pods_mvpclean1_mvpclean1UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F98ABAE12910AF0548753CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				409DA55E099B04E811B67293 /* Pods_mvpclean1.framework */,
+				1E8EBF3897D30EF81F70B1B5 /* Pods_mvpclean1_mvpclean1UITests.framework */,
+				484DC5313BA4DA5BC19717E5 /* Pods_mvpclean1Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBEDCDE7BA6FA269DB6FA95A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E30CD4768C395241A5FB1D9D /* Pods-mvpclean1.debug.xcconfig */,
+				04F9A76ADAF123A1633D1DC4 /* Pods-mvpclean1.release.xcconfig */,
+				3A3ED37A73FEC5E825576E59 /* Pods-mvpclean1-mvpclean1UITests.debug.xcconfig */,
+				7050FFEA329638830FA782C5 /* Pods-mvpclean1-mvpclean1UITests.release.xcconfig */,
+				B895874ADF20BE659E0FCA4C /* Pods-mvpclean1Tests.debug.xcconfig */,
+				AC95BB0269F14EE8FAE1433F /* Pods-mvpclean1Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C11BEE622999EC8E00633322 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		C14EA2602994BA7A00DCA491 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +222,8 @@
 				C14EA2852994BA7C00DCA491 /* mvpclean1Tests */,
 				C14EA28F2994BA7C00DCA491 /* mvpclean1UITests */,
 				C14EA26A2994BA7A00DCA491 /* Products */,
+				BBEDCDE7BA6FA269DB6FA95A /* Pods */,
+				8F98ABAE12910AF0548753CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +240,17 @@
 		C14EA26B2994BA7A00DCA491 /* mvpclean1 */ = {
 			isa = PBXGroup;
 			children = (
+				C1C5E5D629967AF50069ED1E /* Main */,
+				C14EA29F2994BBE900DCA491 /* UI */,
+				C14EA2A02994BC1300DCA491 /* Core */,
+				C14EA2A12994BC2100DCA491 /* Util */,
+				C1C5E5ED29995DEA0069ED1E /* Resources */,
 				C14EA26C2994BA7A00DCA491 /* AppDelegate.swift */,
 				C14EA26E2994BA7A00DCA491 /* SceneDelegate.swift */,
 				C14EA2702994BA7A00DCA491 /* ViewController.swift */,
-				C14EA2722994BA7A00DCA491 /* Main.storyboard */,
 				C14EA2782994BA7B00DCA491 /* Assets.xcassets */,
 				C14EA27A2994BA7B00DCA491 /* LaunchScreen.storyboard */,
 				C14EA27D2994BA7B00DCA491 /* Info.plist */,
-				C14EA2752994BA7A00DCA491 /* mvpclean1.xcdatamodeld */,
 			);
 			path = mvpclean1;
 			sourceTree = "<group>";
@@ -130,6 +272,210 @@
 			path = mvpclean1UITests;
 			sourceTree = "<group>";
 		};
+		C14EA29F2994BBE900DCA491 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C11BEE602999E1D600633322 /* BaseViewController.swift */,
+				C1C5E5E9299940AB0069ED1E /* MainTabBarController.swift */,
+				C1C5E5DD299920CC0069ED1E /* Login */,
+				C14EA2C32994CB7600DCA491 /* Dog */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C14EA2A02994BC1300DCA491 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C14EA2A22994BC2C00DCA491 /* Domain */,
+				C14EA2A32994BC3000DCA491 /* Data */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C14EA2A12994BC2100DCA491 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C1C5E5DB29967D560069ED1E /* UIViewController+Extension.swift */,
+				C14EA2CF299536F900DCA491 /* Register+Extension.swift */,
+				C1C5E5D929967B680069ED1E /* Coordinator.swift */,
+				C1C5E61629998EC20069ED1E /* LottieType.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C14EA2A22994BC2C00DCA491 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C14EA2BE2994C7D200DCA491 /* Mapper */,
+				C14EA2AA2994BD4300DCA491 /* UseCases */,
+				C14EA2A92994BD3500DCA491 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C14EA2A32994BC3000DCA491 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C14EA2B92994C23D00DCA491 /* Repository */,
+				C14EA2A62994BD1B00DCA491 /* DataSources */,
+				C14EA2A72994BD2400DCA491 /* Entity */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C14EA2A42994BD1200DCA491 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				C14EA2B32994BF0000DCA491 /* DogLocalDataSource.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		C14EA2A52994BD1600DCA491 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				C11BEE622999EC8E00633322 /* Base */,
+				C14EA2B12994BE9F00DCA491 /* DogRemoteDataSource.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		C14EA2A62994BD1B00DCA491 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				C14EA2B72994C1F000DCA491 /* BaseDataSourceProtocol.swift */,
+				C14EA2A52994BD1600DCA491 /* Remote */,
+				C14EA2A42994BD1200DCA491 /* Local */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		C14EA2A72994BD2400DCA491 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C14EA2B52994BF6E00DCA491 /* DogEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C14EA2A92994BD3500DCA491 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C14EA2AB2994BD5F00DCA491 /* Dog.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C14EA2AA2994BD4300DCA491 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C14EA2AD2994BDC100DCA491 /* DogUseCases.swift */,
+				C14EA2AF2994BDE500DCA491 /* DogUseCasesProtocol.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C14EA2B92994C23D00DCA491 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C11BEE5D2999CB4800633322 /* BaseRepositoryProtocol.swift */,
+				C14EA2BA2994C26000DCA491 /* DogLocalRepository.swift */,
+				C11BEE5B2999CB0C00633322 /* DogRemoteRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C14EA2BE2994C7D200DCA491 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				C14EA2BF2994C7DC00DCA491 /* DogMapperProtocol.swift */,
+				C14EA2C12994C82900DCA491 /* DogMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		C14EA2C32994CB7600DCA491 /* Dog */ = {
+			isa = PBXGroup;
+			children = (
+				C14EA2CA2994CC0D00DCA491 /* Cell */,
+				C14EA2C82994CBA300DCA491 /* DogPresenter.swift */,
+				C14EA2C42994CB9600DCA491 /* DogViewController.swift */,
+				C14EA2C52994CB9600DCA491 /* DogViewController.xib */,
+			);
+			path = Dog;
+			sourceTree = "<group>";
+		};
+		C14EA2CA2994CC0D00DCA491 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C14EA2CB2994CC2600DCA491 /* DogTableViewCell.swift */,
+				C14EA2CC2994CC2600DCA491 /* DogTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C1C5E5D629967AF50069ED1E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C1C5E5D729967AFD0069ED1E /* MainCoordinator.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C1C5E5DD299920CC0069ED1E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C1C5E5E2299924020069ED1E /* LoginViewController.swift */,
+				C1C5E5E3299924020069ED1E /* LoginViewController.xib */,
+				C1C5E5E6299924EA0069ED1E /* LoginCoordinator.swift */,
+				C1C5E5EB29994B7F0069ED1E /* LoginPresenter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C1C5E5ED29995DEA0069ED1E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1C5E61329998CE70069ED1E /* Lotties */,
+				C1C5E5EE29995DF40069ED1E /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C1C5E5EE29995DF40069ED1E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C1C5E5FE299987870069ED1E /* Omnes-Black.otf */,
+				C1C5E5F0299987870069ED1E /* Omnes-BlackItalic.otf */,
+				C1C5E5F2299987870069ED1E /* Omnes-Bold.otf */,
+				C1C5E600299987870069ED1E /* Omnes-BoldItalic.otf */,
+				C1C5E5FA299987870069ED1E /* Omnes-ExtraLight.otf */,
+				C1C5E5F7299987870069ED1E /* Omnes-ExtraLightItalic.otf */,
+				C1C5E5F8299987870069ED1E /* Omnes-Hairline.otf */,
+				C1C5E5FC299987870069ED1E /* Omnes-HairlineItalic.otf */,
+				C1C5E5F5299987870069ED1E /* Omnes-Light.otf */,
+				C1C5E5F4299987870069ED1E /* Omnes-LightItalic.otf */,
+				C1C5E5F3299987870069ED1E /* Omnes-Medium.otf */,
+				C1C5E5EF299987870069ED1E /* Omnes-MediumItalic.otf */,
+				C1C5E5FB299987870069ED1E /* Omnes-Regular.otf */,
+				C1C5E5FD299987870069ED1E /* Omnes-RegularItalic.otf */,
+				C1C5E5FF299987870069ED1E /* Omnes-Semibold.otf */,
+				C1C5E5F1299987870069ED1E /* Omnes-SemiboldItalic.otf */,
+				C1C5E5F6299987870069ED1E /* Omnes-Thin.otf */,
+				C1C5E5F9299987870069ED1E /* Omnes-ThinItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C1C5E61329998CE70069ED1E /* Lotties */ = {
+			isa = PBXGroup;
+			children = (
+				C11BEE592999C96A00633322 /* loading.json */,
+				C1C5E61429998CFE0069ED1E /* loginLottie.json */,
+			);
+			path = Lotties;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +483,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C14EA2962994BA7C00DCA491 /* Build configuration list for PBXNativeTarget "mvpclean1" */;
 			buildPhases = (
+				FB9AFBC0126DC2EEA9AE0FA1 /* [CP] Check Pods Manifest.lock */,
 				C14EA2652994BA7A00DCA491 /* Sources */,
 				C14EA2662994BA7A00DCA491 /* Frameworks */,
 				C14EA2672994BA7A00DCA491 /* Resources */,
+				DFA63506AB32A98D34B86D34 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +502,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C14EA2992994BA7C00DCA491 /* Build configuration list for PBXNativeTarget "mvpclean1Tests" */;
 			buildPhases = (
+				36F081C0E374637D18A83D8E /* [CP] Check Pods Manifest.lock */,
 				C14EA27E2994BA7C00DCA491 /* Sources */,
 				C14EA27F2994BA7C00DCA491 /* Frameworks */,
 				C14EA2802994BA7C00DCA491 /* Resources */,
@@ -172,9 +521,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C14EA29C2994BA7C00DCA491 /* Build configuration list for PBXNativeTarget "mvpclean1UITests" */;
 			buildPhases = (
+				B4A36081A8D8590C73340C16 /* [CP] Check Pods Manifest.lock */,
 				C14EA2882994BA7C00DCA491 /* Sources */,
 				C14EA2892994BA7C00DCA491 /* Frameworks */,
 				C14EA28A2994BA7C00DCA491 /* Resources */,
+				34E871A4065593AB425511D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,9 +585,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C5E5E5299924020069ED1E /* LoginViewController.xib in Resources */,
+				C1C5E607299987870069ED1E /* Omnes-Light.otf in Resources */,
+				C1C5E60A299987870069ED1E /* Omnes-Hairline.otf in Resources */,
+				C1C5E60B299987870069ED1E /* Omnes-ThinItalic.otf in Resources */,
+				C1C5E608299987870069ED1E /* Omnes-Thin.otf in Resources */,
+				C1C5E602299987870069ED1E /* Omnes-BlackItalic.otf in Resources */,
+				C1C5E601299987870069ED1E /* Omnes-MediumItalic.otf in Resources */,
+				C1C5E60D299987870069ED1E /* Omnes-Regular.otf in Resources */,
+				C1C5E60E299987870069ED1E /* Omnes-HairlineItalic.otf in Resources */,
+				C11BEE5A2999C96A00633322 /* loading.json in Resources */,
+				C1C5E603299987870069ED1E /* Omnes-SemiboldItalic.otf in Resources */,
+				C1C5E609299987870069ED1E /* Omnes-ExtraLightItalic.otf in Resources */,
+				C1C5E611299987870069ED1E /* Omnes-Semibold.otf in Resources */,
+				C1C5E604299987870069ED1E /* Omnes-Bold.otf in Resources */,
+				C1C5E610299987870069ED1E /* Omnes-Black.otf in Resources */,
+				C1C5E605299987870069ED1E /* Omnes-Medium.otf in Resources */,
 				C14EA27C2994BA7B00DCA491 /* LaunchScreen.storyboard in Resources */,
 				C14EA2792994BA7B00DCA491 /* Assets.xcassets in Resources */,
-				C14EA2742994BA7A00DCA491 /* Main.storyboard in Resources */,
+				C1C5E612299987870069ED1E /* Omnes-BoldItalic.otf in Resources */,
+				C1C5E61529998CFE0069ED1E /* loginLottie.json in Resources */,
+				C14EA2C72994CB9600DCA491 /* DogViewController.xib in Resources */,
+				C14EA2CE2994CC2600DCA491 /* DogTableViewCell.xib in Resources */,
+				C1C5E60F299987870069ED1E /* Omnes-RegularItalic.otf in Resources */,
+				C1C5E606299987870069ED1E /* Omnes-LightItalic.otf in Resources */,
+				C1C5E60C299987870069ED1E /* Omnes-ExtraLight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +629,142 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34E871A4065593AB425511D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mvpclean1-mvpclean1UITests/Pods-mvpclean1-mvpclean1UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mvpclean1-mvpclean1UITests/Pods-mvpclean1-mvpclean1UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mvpclean1-mvpclean1UITests/Pods-mvpclean1-mvpclean1UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36F081C0E374637D18A83D8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mvpclean1Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4A36081A8D8590C73340C16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mvpclean1-mvpclean1UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFA63506AB32A98D34B86D34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mvpclean1/Pods-mvpclean1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mvpclean1/Pods-mvpclean1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mvpclean1/Pods-mvpclean1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB9AFBC0126DC2EEA9AE0FA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mvpclean1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C14EA2652994BA7A00DCA491 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C14EA2B42994BF0000DCA491 /* DogLocalDataSource.swift in Sources */,
 				C14EA2712994BA7A00DCA491 /* ViewController.swift in Sources */,
-				C14EA2772994BA7A00DCA491 /* mvpclean1.xcdatamodeld in Sources */,
+				C1C5E5EA299940AB0069ED1E /* MainTabBarController.swift in Sources */,
+				C14EA2C22994C82900DCA491 /* DogMapper.swift in Sources */,
+				C1C5E5EC29994B7F0069ED1E /* LoginPresenter.swift in Sources */,
+				C11BEE612999E1D600633322 /* BaseViewController.swift in Sources */,
 				C14EA26D2994BA7A00DCA491 /* AppDelegate.swift in Sources */,
+				C14EA2BB2994C26000DCA491 /* DogLocalRepository.swift in Sources */,
+				C14EA2B02994BDE500DCA491 /* DogUseCasesProtocol.swift in Sources */,
+				C14EA2AC2994BD5F00DCA491 /* Dog.swift in Sources */,
+				C14EA2CD2994CC2600DCA491 /* DogTableViewCell.swift in Sources */,
+				C14EA2B82994C1F000DCA491 /* BaseDataSourceProtocol.swift in Sources */,
+				C14EA2D0299536F900DCA491 /* Register+Extension.swift in Sources */,
+				C1C5E5E4299924020069ED1E /* LoginViewController.swift in Sources */,
+				C14EA2B22994BE9F00DCA491 /* DogRemoteDataSource.swift in Sources */,
+				C1C5E5DC29967D560069ED1E /* UIViewController+Extension.swift in Sources */,
+				C14EA2AE2994BDC100DCA491 /* DogUseCases.swift in Sources */,
+				C1C5E5D829967AFD0069ED1E /* MainCoordinator.swift in Sources */,
+				C14EA2C62994CB9600DCA491 /* DogViewController.swift in Sources */,
 				C14EA26F2994BA7A00DCA491 /* SceneDelegate.swift in Sources */,
+				C11BEE5E2999CB4800633322 /* BaseRepositoryProtocol.swift in Sources */,
+				C1C5E5E7299924EA0069ED1E /* LoginCoordinator.swift in Sources */,
+				C1C5E61729998EC20069ED1E /* LottieType.swift in Sources */,
+				C14EA2C02994C7DC00DCA491 /* DogMapperProtocol.swift in Sources */,
+				C14EA2C92994CBA300DCA491 /* DogPresenter.swift in Sources */,
+				C14EA2B62994BF6E00DCA491 /* DogEntity.swift in Sources */,
+				C1C5E5DA29967B680069ED1E /* Coordinator.swift in Sources */,
+				C11BEE5C2999CB0C00633322 /* DogRemoteRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +801,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C14EA2722994BA7A00DCA491 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C14EA2732994BA7A00DCA491 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C14EA27A2994BA7B00DCA491 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -370,7 +862,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,7 +916,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -436,6 +928,7 @@
 		};
 		C14EA2972994BA7C00DCA491 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E30CD4768C395241A5FB1D9D /* Pods-mvpclean1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -445,10 +938,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mvpclean1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "\\";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +958,7 @@
 		};
 		C14EA2982994BA7C00DCA491 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04F9A76ADAF123A1633D1DC4 /* Pods-mvpclean1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,10 +968,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mvpclean1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "\\";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,6 +988,7 @@
 		};
 		C14EA29A2994BA7C00DCA491 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B895874ADF20BE659E0FCA4C /* Pods-mvpclean1Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +1009,7 @@
 		};
 		C14EA29B2994BA7C00DCA491 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC95BB0269F14EE8FAE1433F /* Pods-mvpclean1Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +1030,7 @@
 		};
 		C14EA29D2994BA7C00DCA491 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A3ED37A73FEC5E825576E59 /* Pods-mvpclean1-mvpclean1UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +1049,7 @@
 		};
 		C14EA29E2994BA7C00DCA491 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7050FFEA329638830FA782C5 /* Pods-mvpclean1-mvpclean1UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -606,19 +1106,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C14EA2752994BA7A00DCA491 /* mvpclean1.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C14EA2762994BA7A00DCA491 /* mvpclean1.xcdatamodel */,
-			);
-			currentVersion = C14EA2762994BA7A00DCA491 /* mvpclean1.xcdatamodel */;
-			path = mvpclean1.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = C14EA2612994BA7A00DCA491 /* Project object */;
 }
