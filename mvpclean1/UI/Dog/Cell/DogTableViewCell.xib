@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Omnes-Bold.otf">
+            <string>Omnes-Bold</string>
+        </array>
+        <array key="Omnes-Light.otf">
+            <string>Omnes-Light</string>
+        </array>
+        <array key="Omnes-Semibold.otf">
+            <string>Omnes-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="DogTableViewCell" selectionStyle="default" indentationWidth="10" rowHeight="164" id="KGk-i7-Jjw" customClass="DogTableViewCell" customModule="mvpclean1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="164"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0eY-Vu-dVp">
+                        <rect key="frame" x="130" y="12" width="220" height="88"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chief" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhH-VH-smn">
+                                <rect key="frame" x="0.0" y="0.0" width="220" height="21"/>
+                                <fontDescription key="fontDescription" name="Omnes-Bold" family="Omnes" pointSize="21"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITk-Ue-7Xl">
+                                <rect key="frame" x="0.0" y="37" width="220" height="18"/>
+                                <fontDescription key="fontDescription" name="Omnes-Light" family="Omnes" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4If-aH-moe">
+                                <rect key="frame" x="0.0" y="71" width="220" height="17"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="17"/>
+                                <color key="textColor" red="0.17910357603092786" green="0.17764051902355799" blue="0.17639975668793942" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N9l-Km-SbS">
+                        <rect key="frame" x="7" y="9" width="115" height="147"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="115" id="Lju-2i-lem"/>
+                            <constraint firstAttribute="height" constant="147" id="jCr-QO-rZK"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0eY-Vu-dVp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="098-k6-JdD"/>
+                    <constraint firstAttribute="bottom" secondItem="N9l-Km-SbS" secondAttribute="bottom" constant="8" id="Yri-Sz-HY1"/>
+                    <constraint firstItem="0eY-Vu-dVp" firstAttribute="leading" secondItem="N9l-Km-SbS" secondAttribute="trailing" constant="8" symbolic="YES" id="ZrA-pL-6Kw"/>
+                    <constraint firstItem="N9l-Km-SbS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="enP-Vn-1H0"/>
+                    <constraint firstItem="N9l-Km-SbS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="tIU-qd-OgQ"/>
+                    <constraint firstAttribute="trailing" secondItem="0eY-Vu-dVp" secondAttribute="trailing" constant="20" symbolic="YES" id="vEe-za-e9d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ageLabel" destination="4If-aH-moe" id="YpI-bV-J32"/>
+                <outlet property="descriptionLabel" destination="ITk-Ue-7Xl" id="cPp-Mm-kRk"/>
+                <outlet property="imageLabel" destination="N9l-Km-SbS" id="2Sy-kf-wek"/>
+                <outlet property="titleLabel" destination="uhH-VH-smn" id="Bvf-yN-5Qc"/>
+            </connections>
+            <point key="canvasLocation" x="131.29770992366412" y="54.225352112676056"/>
+        </tableViewCell>
+    </objects>
+</document>
