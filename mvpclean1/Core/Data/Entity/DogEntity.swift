@@ -16,5 +16,12 @@ import RealmSwift
         case url
     }
 
+//    init(name: String?, text: String?, age: Int?, url: String?) {
+//        self.name = name
+//        self.text = text
+//        self.age = age
+//        self.url = url
+//    }
+
 }
 
