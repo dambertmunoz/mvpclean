@@ -4,8 +4,9 @@ import Foundation
 
 struct DogPathEndpoint {
     var baseURL: String {
+        MVPConfiguration.getValueFor("base_URL") ?? ""
         // TODO:  Handle by environment
-        "https://demo6878202.mockable.io"
+        // "https://demo6878202.mockable.io"
     }
 }
 
@@ -16,7 +17,9 @@ extension DogPathEndpoint {
 
         var fullURL: String {
             let path = DogPathEndpoint()
-            return "\(path.baseURL)/\(rawValue)"
+            let result = "\(path.baseURL)/\(rawValue)"
+            print(result)
+            return result
         }
     }
 }
