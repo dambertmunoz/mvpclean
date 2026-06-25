@@ -1,10 +1,10 @@
 //
 
-import mvpclean1
+@testable import mvpclean1
 
 struct DogLocalDataSourceMock: DogLocalDataSourceProtocol {
 
-    func fetchAll(_ completion: (Result<[DogEntity], Error>) -> Void) {
+    func fetchAll(_ completion: @escaping (Result<[DogEntity], Error>) -> Void) {
 
         completion(.success(DogStub.dogs))
     }

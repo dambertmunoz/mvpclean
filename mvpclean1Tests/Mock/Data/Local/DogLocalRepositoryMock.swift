@@ -1,6 +1,6 @@
 //
 
-import mvpclean1
+@testable import mvpclean1
 
 struct DogLocalRepositoryMock: DogLocalRepositoryProtocol {
 

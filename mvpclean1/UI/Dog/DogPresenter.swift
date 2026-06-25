@@ -26,13 +26,15 @@ final class DogPresenter: DogPresenterProtocol {
     func setupData() {
         view?.showLoading()
         useCase.fetchAll { result in
-            self.view?.hideLoading()
-            switch result {
-            case .success(let success):
-                self.dogs = success
-                self.view?.dataIsLoaded()
-            case .failure(let failure):
-                self.view?.showError(failure)
+            DispatchQueue.main.async {
+                self.view?.hideLoading()
+                switch result {
+                case .success(let success):
+                    self.dogs = success
+                    self.view?.dataIsLoaded()
+                case .failure(let failure):
+                    self.view?.showError(failure)
+                }
             }
         }
     }
