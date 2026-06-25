@@ -87,3 +87,9 @@ Run from Xcode using the `mvpclean1Tests` scheme.
 - Presenter callbacks are marshalled to the main queue before updating the view.
 - Tests avoid Xcode placeholder code and use explicit spies/mocks.
 - The app intentionally keeps UIKit/xib screens because the goal is architecture boundaries in a legacy-compatible stack.
+
+## Author
+
+Dambert Muñoz
+
+Email: [dmsantillana2705@gmail.com](mailto:dmsantillana2705@gmail.com)
